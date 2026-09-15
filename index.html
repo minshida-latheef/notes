@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Notes</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main application container -->
+    <main class="app-container">
+
+        <!-- Header -->
+        <header class="app-header">
+            <div>
+                <h1>My Notes</h1>
+                <p>Write down your ideas and keep them organized.</p>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search notes..."
+                    aria-label="Search notes"
+                >
+            </div>
+        </header>
+
+
+        <!-- Add Note Section -->
+        <section class="note-form-section">
+
+            <h2>Create a New Note</h2>
+
+            <form id="noteForm">
+
+                <div class="form-group">
+                    <label for="noteTitle">Title</label>
+
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Enter note title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="noteContent">Note</label>
+
+                    <textarea
+                        id="noteContent"
+                        rows="5"
+                        placeholder="Write your note here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="add-btn">
+                    + Add Note
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+
+            <div class="section-header">
+                <h2>Your Notes</h2>
+                <span id="noteCount">0 notes</span>
+            </div>
+
+            <!-- Notes will be inserted here using JavaScript -->
+            <div id="notesContainer" class="notes-grid"></div>
+
+            <!-- Empty state -->
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">📝</div>
+
+                <h3>No notes yet</h3>
+
+                <p>
+                    Create your first note to get started!
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
