@@ -42,7 +42,7 @@ This project was developed to improve practical frontend development skills and 
 
 ## 🔗 Live Preview
 
-[Click Here to View the Project](YOUR_LIVE_DEMO_URL)
+[Click Here to View the Project](https://minshida-latheef.github.io/notes/)
 
 ## 👨‍💻 Author
 
